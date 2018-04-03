@@ -1,0 +1,16 @@
+#이건 번역 불가다ㅠㅠㅠㅠ
+print('what do you get when you cross a snowman with a vampire?')
+input()
+print('What do dentists call an astronant\'s cavity?')
+input()
+print('A black hole!')
+input()
+print('Knock knock.')
+input()
+print("Who's there?")
+input()
+print('Interrupting cow.')
+input()
+print('Interrupting cow wh', end='')
+print('-MOO!')
+
