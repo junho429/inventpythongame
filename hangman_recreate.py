@@ -83,6 +83,16 @@ while True:
     if failedNumber >= len(HANGMAN_PICS):
         print("Game over")
         print("Do you want to restart? y/n")
+
+    #게임클리어 여부를 확인합니다.
+    isGameClear = True
+    for i in word:
+        if i not in correctLetter:
+            isGameClear = False
+
+    if isGameClear:
+        print("Game Clear!")
+        
         
 
 
