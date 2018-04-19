@@ -49,7 +49,7 @@ def displayScreen(word):
     print('Missed letters:')
     for letter in word:
         if letter in correctLetter:
-            print(letter,end = ' ')
+            print(letter, end = ' ')
         else:
             print('_', end = " ")
     print()
@@ -64,6 +64,7 @@ def userInput():
     userinput = input()
     return userinput
 
+
 print("H A N G M A N")
 word = selectword()
 print("debug: 선택된 단어: " + word)
@@ -77,7 +78,12 @@ while True:
     else:
         wrongLetter.append(guessedLetter)
         failedNumber += 1
-    
+
+    #게임오버 여부를 확인합니다.
+    if failedNumber >= len(HANGMAN_PICS):
+        print("Game over")
+        print("Do you want to restart? y/n")
+        
 
 
 input()
